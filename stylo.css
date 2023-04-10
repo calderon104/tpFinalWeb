@@ -1,0 +1,15 @@
+/*h1{
+    font-family: 'Noto Serif', serif;
+    color: #91D814;
+    justify-content: center;
+}*/
+body{
+    background-color:rgba(237, 239, 240, 0.085);
+}
+.titulo{
+    font-family: 'Noto Serif', serif;
+    display: flex;
+    color: #91D814;
+    justify-content: center;
+    
+}
