@@ -3,13 +3,31 @@
     color: #91D814;
     justify-content: center;
 }*/
+*{
+    font-family: 'EB Garamond', serif;
+}
 body{
     background-color:rgba(237, 239, 240, 0.085);
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .titulo{
     font-family: 'Noto Serif', serif;
     display: flex;
     color: #91D814;
     justify-content: center;
-    
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+a:hover{
+    color:#a9c971;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.infoPlanta{
+
 }
