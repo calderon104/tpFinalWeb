@@ -10,6 +10,7 @@ body{
     background-color:rgba(237, 239, 240, 0.085);
     padding-left: 3%;
     padding-right: 3%;
+    display: flexbox;
 }
 .titulo{
     font-family: 'Noto Serif', serif;
@@ -23,6 +24,16 @@ body{
 }
 a:hover{
     color:#a9c971;
+}
+ul,h2{
+    font-size: 20px;
+}
+p{
+    font-size: 25px;
+    margin-top: 0px;
+}
+img{
+    width: 300px;
 }
 a{
     text-decoration: none;
