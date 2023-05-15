@@ -51,7 +51,7 @@ a{
     text-align: center;
     border-style: solid;
 }*/
-form{
+.pieForm{
     margin: 0 auto;
     width: 399px;
     padding: 1em;
@@ -59,9 +59,9 @@ form{
     border-radius: 1em;;
     background-color: #a9c971;
 }
-.pieForm{
+/*.pieForm{
     text-shadow: black;
-}
+}*/
 label{
     display: inline-block;
     width: 100px;
