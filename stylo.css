@@ -3,6 +3,11 @@
     color: #91D814;
     justify-content: center;
 }*/
+/*
+    background-image:url(fondoMain.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;*/
 *{
     font-family: 'EB Garamond', serif;
 }
@@ -17,10 +22,15 @@ body{
     color: #a9c971;
     justify-content: center;
 }
+.tituloMain{
+    font-family: 'Noto Serif', serif;
+    display: flex;
+    color: #a9c971;
+    justify-content: center;
+}
 .container{
     display: flex;
     justify-content: center;
-
 }
 p{
 font-size: 25px;
@@ -74,4 +84,9 @@ input{
     display: flex;
     justify-content:center;
     width: 30%;
+}
+.carrusel{
+    width: 100%;
+    position: relative;
+    height: 500px;
 }
