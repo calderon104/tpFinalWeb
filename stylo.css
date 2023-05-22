@@ -86,11 +86,24 @@ input{
     width: 30%;
 }
 .carrusel{
-   
+   width: 33%;
+   display: flex;
 }
 #imagenCarrusel{
-    width: 500px;
-    height: 550px;
+    width: 600px;
+    height: 750px;
 }
 .btnCarrusel{
 }
+/*cambiar la posicion ya que hicimos mas grande la imagen */
+#btnAnterior{
+    position: absolute;
+    top: 60%;
+    right: 87%;
+}
+#btnSiguiente{
+    position: absolute;
+    top: 60%;
+    right: 80%;
+}
+
