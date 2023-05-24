@@ -11,6 +11,7 @@
 *{
     font-family: 'EB Garamond', serif;
 }
+
 body{
     background-color:rgba(237, 239, 240, 0.085);
     padding-left: 3%;
@@ -86,24 +87,42 @@ input{
     width: 30%;
 }
 .carrusel{
-   width: 33%;
+   width: 40%;
    display: flex;
 }
+.containerCarrusel{
+    width: 100%;
+    display: flex;
+}
 #imagenCarrusel{
-    width: 600px;
+    width: 550px;
     height: 750px;
 }
-.btnCarrusel{
-}
-/*cambiar la posicion ya que hicimos mas grande la imagen */
 #btnAnterior{
     position: absolute;
-    top: 60%;
-    right: 87%;
+    top: 80%;
+    right: 85%;
 }
 #btnSiguiente{
     position: absolute;
-    top: 60%;
+    top: 80%;
     right: 80%;
 }
+.introPagina,h2{
+    width: 60%;
+    font-size: 60px;
+}
+.info{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50%;
+    background-color: #ecf3e2;
+}
+/*footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: rgb(0, 0, 0);
+}*/
+
 

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivace!</title>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:ital,wght@1,200&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylo.css">
     <link rel="icon" type="image/x-icon" href="/img/82_85230.png">
@@ -15,15 +18,37 @@
     <div class="tituloMain">
         <h1>Vivace!</h1>
     </div>
+    <div>
+        <nav>
+                <a href="main.html">Inicio</a>
+                <a href="index.html">Plantas de exterior</a>
+                <a href="plantasAromaticas.html">Plantas aromaticas</a>
+        </nav>
+    </div>
 </header>
 <body>
         <div class="containerCarrusel">
             <div class="carrusel">
-                <img id="imagenCarrusel" src="imgCarrusel/imgCarrusel1.jpg" alt="Foto de carrusel">
-                <h2>WELCOME :</h2>
+                <img id="imagenCarrusel" src="imgCarrusel/imgCarrusel1.png" alt="Foto de carrusel">
                 <button id="btnAnterior" class="btnCarrusel" onclick="imagenAnt()">Anterior</button>
                 <button id="btnSiguiente"  class="btnCarrusel" onclick="imagenSig()">Siguiente</button>
             </div>
+            <div class="introPagina">
+                <h2 id="h2_mod">Bienvenido</h2>
+                <p class="info">Aquí encontrarás un espacio lleno de conocimiento y pasión por la naturaleza, donde podrás explorar el maravilloso mundo de las plantas y 
+                    descubrir cómo podemos proteger y preservar nuestro entorno. </p><br>
+                <p class="info">Nuestro objetivo es brindarte información valiosa sobre diferentes tipos de plantas, 
+                    desde exuberantes plantas de exterior hasta pequeñas plantas de interior, así como consejos prácticos sobre cómo cultivar y 
+                    cuidar tus propias plantas de manera sostenible.</p><br>
+                <p class="info">
+                    Creemos firmemente en la importancia de cuidar nuestro planeta y queremos compartir contigo formas creativas de promover un estilo de vida 
+                    ecológico y responsable. Aquí aprenderás sobre prácticas de jardinería orgánica, la importancia de la conservación del agua, cómo reducir 
+                    el uso de químicos nocivos y mucho más.
+                </p>
+            </div>
         </div>
+    <footer>
+        <p>hola</p>
+    </footer>
 </body>
 </html>

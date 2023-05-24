@@ -1,4 +1,4 @@
-var imagenes=["imgCarrusel/imgCarrusel1.jpg","imgCarrusel/imgCarrusel2.png", "imgCarrusel/imgCarrusel3.png"];
+var imagenes=["imgCarrusel/imgCarrusel1.png","imgCarrusel/imgCarrusel2.jpg", "imgCarrusel/imgCarrusel3.png"];
 var cont = 0;
 function imagenAnt(){
     if(cont>0){
