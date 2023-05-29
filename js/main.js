@@ -104,11 +104,12 @@ function verificarEmail(){
         texto.innerHTML="";
     }
 }
-document.getElementById("formulario").addEventListener("submit",function(e){
-    e.preventDefault();
-})
+
 //JESUS LORD HELP MEEEEEEEEEEEEE 
 function validarTodo(){
+    document.getElementById("formulario").addEventListener("submit",function(e){
+        e.preventDefault();
+    })
     var expRmail= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     var expRletra=/^[a-zA-Z]+$/;
     var nombre=document.getElementById("fname").value;
@@ -138,8 +139,8 @@ function validarTodo(){
         texto.textContent="Datos ingresados correctamente"
         text1.textContent="Nombre: "+ nombre;
         text2.textContent="Apellido: "+ apellido;
-        text4.textContent="Gmail: "+ gmail;
-        text3.textContent="Planta: "+ plant;
+        text3.textContent="Gmail: "+ gmail;
+        text4.textContent="Planta: "+ plant;
         result.appendChild(texto);
         result.appendChild(text1);
         result.appendChild(text2);
