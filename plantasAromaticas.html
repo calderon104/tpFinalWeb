@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:ital,wght@1,200&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylo.css">
+    <script defer src="js/main.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/82_85230.png">
     <title>Plantas Aromaticas</title>
 </head>
@@ -16,5 +17,22 @@
     </div>
 </header>
 <body>
+    <footer>
+        <div class="pieForm">
+        <p>Deseas recomendar alguna planta para que aparezca? <br></p>
+        <p>Llena este formulario si asi lo desea: </p>
+        <form action="/action_page.php">
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Apellido:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="plant">Ingrese su planta</label>
+            <input type="text" id="plant" name="plant"><br><br>
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+    </footer>
 </body>
 </html>

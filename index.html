@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:ital,wght@1,200&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylo.css">
     <link rel="icon" type="image/x-icon" href="/img/82_85230.png">
+    <script defer src="js/main.js"></script>
     <title>Vivace!</title>
 </head>
 <header>
@@ -77,17 +78,28 @@
             <div class="pieForm">
             <p>Deseas recomendar alguna planta para que aparezca? <br></p>
             <p>Llena este formulario si asi lo desea: </p>
-            <form action="/action_page.php">
+            <form id="formulario" name="form"action="#" >
                 <label for="fname">Nombre:</label>
-                <input type="text" id="fname" name="fname"><br><br>
+                <input type="text" id="fname" name="fname" onkeydown="verificarNombre()"><span id="textNombre"></span><br><br>
+
+
                 <label for="lname">Apellido:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="email">Gmail:</label>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="text" id="lname" name="lname" onkeydown="verificarApellido()"><span id="textApellido"></span><br><br>
+
+
+                <label for="gmail">Gmail:</label>
+                <input type="text" id="gmail" name="gmail" onkeydown="verificarEmail()"><span id="text"></span><br>
+
                 <label for="plant">Ingrese su planta</label>
-                <input type="text" id="plant" name="plant"><br><br>
-                <input type="submit" value="Aceptar">
+                <input type="text" id="plant" name="plant" onkeydown="verificarPlanta()"><span id="textPlanta"></span><br><br>
+
+                <input type="submit" id="submit" value="Enviar" onclick="validarTodo()">
               </form>
+            </div>
+            <div>
+                <ul id="resultados">
+
+                </ul>
             </div>
         </footer>
 </body>

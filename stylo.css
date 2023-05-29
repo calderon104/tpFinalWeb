@@ -1,13 +1,4 @@
-/*h1{
-    font-family: 'Noto Serif', serif;
-    color: #91D814;
-    justify-content: center;
-}*/
-/*
-    background-image:url(fondoMain.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;*/
+
 *{
     font-family: 'EB Garamond', serif;
 }
@@ -28,6 +19,10 @@ body{
     display: flex;
     color: #a9c971;
     justify-content: center;
+}
+nav{
+    justify-content: space-between;
+    display: flex;
 }
 .container{
     display: flex;
