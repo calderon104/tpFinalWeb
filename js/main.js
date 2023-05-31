@@ -56,14 +56,17 @@ function verificarEmail(){
   function verificarNombre(){
     var nom= document.getElementById("fname").value;
     var texto=document.getElementById("textNombre");
-    let aux= /^[a-zA-Z]+$/;
+    let aux= /^[a-zA-Z]{1,15}$/;
     if(aux.test(nom)){
         texto.innerHTML="Nombre valido";
         texto.style.color="#00ff00";
         
+    }else if(nom.length>15){
+        texto.innerHTML="Ingrese menos de 15 letras!"
+        texto.style.color="#ff0000";
     }
     else {
-        texto.innerHTML="Ingrese letras";
+        texto.innerHTML="Ingrese solo letras";
         texto.style.color="#ff0000";
     }
     if(nom=""){
@@ -74,7 +77,7 @@ function verificarEmail(){
   function verificarApellido(){
     var apell= document.getElementById("lname").value;
     var texto=document.getElementById("textApellido");
-    let aux= /^[a-zA-Z]+$/;
+    let aux= /^[a-zA-Z]{1,15}$/;
     if(aux.test(apell)){
         texto.innerHTML="Apellido valido";
         texto.style.color="#00ff00";
@@ -91,7 +94,7 @@ function verificarEmail(){
   function verificarPlanta(){
     var plant= document.getElementById("plant").value;
     var texto=document.getElementById("textPlanta");
-    let aux= /^[a-zA-Z]+$/;
+    let aux= /^[a-zA-Z]{1,15}$/;
     if(aux.test(plant)){
         texto.innerHTML="Planta valido";
         texto.style.color="#00ff00";
@@ -111,22 +114,22 @@ function validarTodo(){
         e.preventDefault();
     })
     var expRmail= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    var expRletra=/^[a-zA-Z]+$/;
+    var expRletra=/^[a-zA-Z]{1,10}$/;
     var nombre=document.getElementById("fname").value;
     var apellido=document.getElementById("lname").value;
     var gmail =document.getElementById("gmail").value;
     var plant= document.getElementById("plant").value;
-    if(!expRletra.test(nombre)){
-        alert("Error al ingresar su nombre")
+    if(!expRletra.test(nombre || nombre!="")){
+        
     }else 
-    if(!expRletra.test(apellido)){
-        alert("Error al ingresar su apellido")
+    if(!expRletra.test(apellido|| apellido!="")){
+        
     }else
-    if(!expRletra.test(plant)){
-        alert("Error al ingresar su planta")
+    if(!expRletra.test(plant|| plant!="")){
+        
     }else
-    if(!expRmail.test(gmail)){
-        alert("Error al ingresar el Email")
+    if(!expRmail.test(gmail|| gmail!="")){
+        
     }else
     if(expRletra.test(nombre)&&expRletra.test(apellido)&&expRletra.test(plant)&&expRmail.test(gmail)){
         var result= document.getElementById("resultados");
