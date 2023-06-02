@@ -133,7 +133,7 @@ function validarTodo(){
     }else
     if(expRletra.test(nombre)&&expRletra.test(apellido)&&expRletra.test(plant)&&expRmail.test(gmail)){
         var result= document.getElementById("resultados");
-        result.innerHTML=" ";
+        result.innerHTML="";
         var texto=document.createElement("h3");
         var text1=document.createElement("li");
         var text2=document.createElement("li");
