@@ -17,33 +17,28 @@
     </div>
 </header>
 <body>
-    <footer>
+    <section>
         <div class="pieForm">
-        <p>Deseas recomendar alguna planta para que aparezca? <br></p>
-        <p>Llena este formulario si asi lo desea: </p>
-        <form id="formulario" name="form"action="#" >
-            <label for="fname">Nombre:</label>
-            <input type="text" id="fname" name="fname" onkeydown="verificarNombre()"><span id="textNombre"></span><br><br>
-
-            <label for="lname">Apellido:</label>
-            <input type="text" id="lname" name="lname" onkeydown="verificarApellido()"><span id="textApellido"></span><br><br>
-
-
-            <label for="gmail">Email:</label>
-            <input type="text" id="gmail" name="gmail" onkeydown="verificarEmail()"><span id="text"></span><br>
-
-            <label for="plant">Ingrese su planta</label>
-            <input type="text" id="plant" name="plant" onkeydown="verificarPlanta()"><span id="textPlanta"></span><br><br>
-
-            <input type="submit" id="submit" value="Enviar" onclick="validarTodo()">
+            <h3>Deseas recomendar alguna planta para que aparezca? <br></h3>
+            <h3>Llena este formulario si asi lo desea: </h3>
+                <form onsubmit="return validarCampos()" id="f_contacto">
+                    <label for="fname">Nombre:</label>
+                    <input type="text" autofocus id="fname">
+                    <label for="lname">Apellido:</label>
+                    <input type="text"  id="lname">
+                    <label for="gmail">Email:</label>
+                    <input type="text" id="gmail">
+                    <label for="plant">planta</label>
+                    <input type="text" id="plant">
+                    <button type="submit" class="btnForm">Enviar</button>
+                <div id="errores">
+                </div>
+        </div>
           </form>
+        <div id="resultados">
         </div>
-        <div>
-            <ul id="resultados">
-
-            </ul>
-        </div>
-        </div>
+</section>
+    <footer>
     </footer>
 </body>
 </html>

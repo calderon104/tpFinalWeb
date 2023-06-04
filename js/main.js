@@ -27,7 +27,6 @@ function verificarEmail(){
     var form= document.getElementById("formulario");
     var email= document.getElementById("gmail").value;
     var text= document.getElementById("text");
-    let pattern= /^\w+@\w+(\.\w{2,4})+$/;
     let patter6= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     if (patter6.test(email)){
       form.classList.add("valid");
@@ -109,7 +108,6 @@ function verificarEmail(){
 }
 
 //JESUS LORD HELP MEEEEEEEEEEEEE 
-var result= document.getElementById("resultados");
 let exR_emails = /^\w+@\w+(\.\w{2,4})+$/;
 function validarCampos(){
   let nombre= document.querySelector("#fname");
@@ -129,29 +127,34 @@ function validarCampos(){
     let p= document.createElement("p");
     p.innerHTML="Falta el nombre";
     errores.appendChild(p);
+    nombre.classList.add("error");
     error=true;
   }
   if(nombre.value>15){
     let p= document.createElement("p");
     p.innerHTML="Maximo de caracteres en nombre es 15";
     errores.appendChild(p);
+    nombre.classList.add("error");
     error=true;
   }
   if(apellido.value==""){
     let p= document.createElement("p");
     p.innerHTML="Falta el apellido";
+    apellido.classList.add("error")
     errores.appendChild(p);
     error=true;
   }
   if(apellido.value>15){
     let p= document.createElement("p");
     p.innerHTML="Maximo de caracteres en apellido es 15";
+    apellido.classList.add("error");
     errores.appendChild(p);
     error=true;
   }
-  if(exR_emails.test(email)){
+  if(!exR_emails.test(email.value)){
     let p= document.createElement("p");
     p.innerHTML= "Email invalido";
+    email.classList.add("error");
     errores.appendChild(p);
     error=true;
   }
@@ -159,18 +162,21 @@ function validarCampos(){
     let p= document.createElement("p");
     p.innerHTML="Email vacio"
     errores.appendChild(p);
+    email.classList.add("error");
     error=true;
   }
   if(planta.value==""){
     let p= document.createElement("p");
     p.innerHTML= "Falta ingresar la planta";
     errores.appendChild(p);
+    planta.classList.add("error");
     error=true;
   }
   if(planta.value>15){
     let p= document.createElement("p");
     p.innerHTML= "Solo se permite hasta 15 caracteres de planta";
     errores.appendChild(p);
+    planta.classList.add("error");
     error=true;
   }
   if(error){
