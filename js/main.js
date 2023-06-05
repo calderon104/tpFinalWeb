@@ -201,6 +201,9 @@ function validarCampos(){
     msjContenedor.appendChild(p2);
     msjContenedor.appendChild(p3);
     respuesta.appendChild(msjContenedor);
+    document.forms["f_contacto"].reset();
+    let fcs= document.querySelector("form input");
+    fcs.focus();
   }
   return false;
 }

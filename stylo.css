@@ -114,11 +114,15 @@ input{
     position: absolute;
     top: 80%;
     right: 85%;
+    width: 100px;
+    background-color: #a9c971;
 }
 #btnSiguiente{
     position: absolute;
     top: 80%;
     right: 80%;
+    width: 100px;
+    background-color: #a9c971;
 }
 .introPagina,h2{
     width: 60%;
