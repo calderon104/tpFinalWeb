@@ -110,17 +110,18 @@ input{
     width: 550px;
     height: 750px;
 }
+/*Los colores del backgroud solo los toma en google crome, idk*/
 #btnAnterior{
     position: absolute;
-    top: 80%;
-    right: 85%;
+    top: 90%;
+    right: 83%;
     width: 100px;
     background-color: #a9c971;
 }
 #btnSiguiente{
     position: absolute;
-    top: 80%;
-    right: 80%;
+    top: 90%;
+    right: 77%;
     width: 100px;
     background-color: #a9c971;
 }
@@ -146,5 +147,8 @@ input{
 .btnForm{
     width: 75%;
     align-self: center;
+}
+.nav_plantas{
+justify-content: start;
 }
 
