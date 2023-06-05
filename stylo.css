@@ -23,6 +23,7 @@ body{
 nav{
     justify-content: space-between;
     display: flex;
+    font-size: 25px;
 }
 .container{
     display: flex;
@@ -76,12 +77,13 @@ form{
     border: 1px solid red;
   }
   #errores{
-    border: 1px solid red;
     padding: 5px;
     display: none;
   }
   #errores p{
-    color: red;
+    color: rgb(238, 4, 4);
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
   }
   .msjContenedor{
     border: 1px#a9c971;
@@ -150,5 +152,6 @@ input{
 }
 .nav_plantas{
 justify-content: start;
+font-size: 25px;
 }
 
